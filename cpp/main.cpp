@@ -48,7 +48,7 @@ int main(int argc, const char *argv[])
   // for (unsigned int j = 0; j < count; j++){
   //     medias[j]->display(std::cout);
   // }
-  
+
   /*TEST for play*/
   // medias[0] = new Photo("test-photo",
   //                       "/home/vivian_withana/paradigm/TP1/test-photo.JPG",
@@ -154,33 +154,32 @@ int main(int argc, const char *argv[])
   try
   {
     pPtr photo = m1->createPhoto("test-photo",
-                               "/home/vivian_withana/paradigm/TP1/test-photo.JPG",
-                               10, 10);
-  vPtr video = m1->createVideo("test-video",
-                               "/home/vivian_withana/paradigm/TP1/test-video.mp4",
-                               10);
-                               gPtr g = m1->createGroup("My favorites");
+                                 "/home/vivian_withana/paradigm/TP1/test-photo.JPG",
+                                 10, 10);
+    vPtr video = m1->createVideo("test-video",
+                                 "/home/vivian_withana/paradigm/TP1/test-video.mp4",
+                                 10);
+    gPtr g = m1->createGroup("My favorites");
     g->push_back(photo);
     g->push_back(video);
   }
-  catch(const std::exception& e)
+  catch (const std::exception &e)
   {
     std::cerr << e.what() << '\n';
     return -1;
   }
 
-
   int chap_num = 5;
   int *chapters = new int[chap_num]{10, 20, 30, 40, 50};
   try
   {
-     m1->createFilm("ToyStory", "./ToyStory", 20, chapters, chap_num);
+    m1->createFilm("ToyStory", "./ToyStory", 20, chapters, chap_num);
   }
-  catch(const std::exception& e)
+  catch (const std::exception &e)
   {
     std::cerr << e.what() << '\n';
   }
-  
+
   // write
   for (const auto &pair : m1->getMedias())
   {
@@ -190,6 +189,10 @@ int main(int argc, const char *argv[])
   // write
   Manager *m2 = new Manager();
   m2->read(f);
+  // for (const auto &pair : m2->getMedias())
+  // {
+  //   std::cout << pair.first << ": " << pair.second << std::endl;
+  // }
   try
   {
     m2->searchAndDisplay("test-photo", std::cout);
@@ -213,11 +216,11 @@ int main(int argc, const char *argv[])
   try
   {
     pPtr photo = m->createPhoto("test-photo",
-                              "/home/vivian_withana/paradigm/TP1/test-photo.JPG",
-                              10, 10);
-  vPtr video = m->createVideo("test-video",
-                              "/home/vivian_withana/paradigm/TP1/test-video.mp4",
-                              10);
+                                "/home/vivian_withana/paradigm/TP1/test-photo.JPG",
+                                10, 10);
+    vPtr video = m->createVideo("test-video",
+                                "/home/vivian_withana/paradigm/TP1/test-video.mp4",
+                                10);
     g = m->createGroup("My favorites");
     g->push_back(photo);
     g->push_back(video);
@@ -228,8 +231,8 @@ int main(int argc, const char *argv[])
     std::cerr << e.what() << '\n';
     return -1;
   }
-   auto *server = new TCPServer([&](std::string const &request, std::string &response)
-                                 {
+  auto *server = new TCPServer([&](std::string const &request, std::string &response)
+                               {
       std::cout << "request: " << request << std::endl;
       std::stringstream ss(request);
       std::string action, name;

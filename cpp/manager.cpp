@@ -24,7 +24,8 @@ using gPtr = std::shared_ptr<Group>;
 pPtr Manager::createPhoto(std::string name, std::string filepath, double latitude, double longitude)
 {
     pPtr p = pPtr(new Photo(name, filepath, latitude, longitude));
-    if (mediaCollection.count(name) > 0){
+    if (mediaCollection.count(name) > 0)
+    {
         throw NamingError("Photo name already exists!");
     }
     mediaCollection[name] = p;
@@ -34,7 +35,8 @@ pPtr Manager::createPhoto(std::string name, std::string filepath, double latitud
 vPtr Manager::createVideo(std::string name, std::string filepath, int duration)
 {
     vPtr v = vPtr(new Video(name, filepath, duration));
-    if (mediaCollection.count(name) > 0){
+    if (mediaCollection.count(name) > 0)
+    {
         throw NamingError("Video name already exists!");
     }
     mediaCollection[name] = v;
@@ -44,7 +46,8 @@ vPtr Manager::createVideo(std::string name, std::string filepath, int duration)
 fPtr Manager::createFilm(std::string name, std::string filepath, int duration, const int *chapters, size_t n_chapters)
 {
     fPtr f = fPtr(new Film(name, filepath, duration, chapters, n_chapters));
-    if (mediaCollection.count(name) > 0){
+    if (mediaCollection.count(name) > 0)
+    {
         throw NamingError("Film name already exists!");
     }
     mediaCollection[name] = f;
@@ -62,7 +65,8 @@ gPtr Manager::createGroup(std::string groupName)
 {
     gPtr group = gPtr(new Group());
     group->setName(groupName);
-    if (mediaGroups.count(groupName) > 0) {
+    if (mediaGroups.count(groupName) > 0)
+    {
         throw NamingError("Group name already exists!");
     }
     mediaGroups[groupName] = group;
@@ -117,8 +121,8 @@ void Manager::deleteByName(const std::string &name)
         return;
     }
 
-    //std::cout << "No multimedia or group found with the name: " << name << std::endl;
-    throw NamingError("No multimedia or group found with the name "+name);
+    // std::cout << "No multimedia or group found with the name: " << name << std::endl;
+    throw NamingError("No multimedia or group found with the name " + name);
 }
 
 void Manager::read(const std::string &filename)
@@ -132,7 +136,7 @@ void Manager::read(const std::string &filename)
     }
     while (std::getline(f, line))
     {
-        //std::cout << "Getting line: " << line<<std::endl;
+        //std::cout << "Getting line: " << line << std::endl;
         std::stringstream ss(line);
         std::string className;
         std::string Name;
@@ -151,9 +155,9 @@ void Manager::read(const std::string &filename)
             longitudeNum = atof(Longitude.c_str());
             try
             {
-               createPhoto(Name, Filepath, latitudeNum, longitudeNum);
+                createPhoto(Name, Filepath, latitudeNum, longitudeNum);
             }
-            catch(const std::exception& e)
+            catch (const std::exception &e)
             {
                 std::cerr << e.what() << '\n';
                 return;
@@ -168,7 +172,7 @@ void Manager::read(const std::string &filename)
             {
                 createVideo(Name, Filepath, durationNum);
             }
-            catch(const std::exception& e)
+            catch (const std::exception &e)
             {
                 std::cerr << e.what() << '\n';
                 return;
@@ -183,32 +187,37 @@ void Manager::read(const std::string &filename)
             durationNum = atoi(Duration.c_str());
             if (chaptersNum != 0)
             {
-                int* chapters = new int[chaptersNum];
+                int *chapters = new int[chaptersNum];
                 for (int i = 0; i < chaptersNum; ++i)
                 {
                     std::string chapter;
                     ss >> chapter;
                     chapters[i] = atoi(chapter.c_str());
-                    try
+                }
+                try
                     {
                         createFilm(Name, Filepath, durationNum, chapters, chaptersNum);
                         delete[] chapters;
                     }
-                    catch(const std::exception& e)
+                    catch (const std::exception &e)
                     {
                         std::cerr << e.what() << '\n';
                         return;
-                    }  
-                }
-            } else {
+                    }
+            }
+            else
+            {
                 throw std::invalid_argument("Chapters cannot be empty!");
             }
-        } else {
+        }
+        else
+        {
             std::cerr << "Class type " << className << " doesn't exist" << std::endl;
         }
     }
 }
 
-std::map<std::string, mmPtr> Manager::getMedias() const {
+std::map<std::string, mmPtr> Manager::getMedias() const
+{
     return mediaCollection;
 }
