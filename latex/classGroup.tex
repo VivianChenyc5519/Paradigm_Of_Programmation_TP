@@ -1,0 +1,146 @@
+\doxysection{Group Class Reference}
+\hypertarget{classGroup}{}\label{classGroup}\index{Group@{Group}}
+
+
+A container for multimedia objects with group management capabilities.  
+
+
+
+
+{\ttfamily \#include $<$group.\+h$>$}
+
+
+
+Inheritance diagram for Group\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classGroup__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Group\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classGroup__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGroup_aed00a22ff227ee2657ae44a5cbcedf7c}{\texorpdfstring{$\sim$}{\string~}\+Group}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{classGroup}{Group} class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classGroup_a2441b4048116108fe8f65bdf71d02494}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGroup_a292eb30493e66cb7e152fd72cd4ce877}{set\+Name}} (const std\+::string \&group\+Name)
+\begin{DoxyCompactList}\small\item\em Sets the name of the group. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classGroup_a8abe29b0653f0d6af887f157a52fe82a}{display}} (std\+::ostream \&os) const
+\begin{DoxyCompactList}\small\item\em Displays the group\textquotesingle{}s information to an output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classGroup_adddd5c43ff870a047aa66db4edf82a7e}{Manager}}
+\begin{DoxyCompactList}\small\item\em \doxylink{classManager}{Manager} class is granted friend access to manage group creation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A container for multimedia objects with group management capabilities. 
+
+The \doxylink{classGroup}{Group} class extends std\+::list to store collections of multimedia items (photos, videos, films). It provides functionality to name groups and display their contents. The class is designed to be managed by the \doxylink{classManager}{Manager} class.
+
+\begin{DoxyNote}{Note}
+This class uses shared pointers for memory management of multimedia objects to ensure safe resource handling in a complex application.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{classMultimedia}{Multimedia}, \doxylink{classManager}{Manager} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classGroup_aed00a22ff227ee2657ae44a5cbcedf7c}\label{classGroup_aed00a22ff227ee2657ae44a5cbcedf7c} 
+\index{Group@{Group}!````~Group@{\texorpdfstring{$\sim$}{\string~}Group}}
+\index{````~Group@{\texorpdfstring{$\sim$}{\string~}Group}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Group()}{\string~Group()}}
+{\footnotesize\ttfamily Group\+::\texorpdfstring{$\sim$}{\string~}\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the \doxylink{classGroup}{Group} class. 
+
+Cleans up the group and all its contained multimedia objects through the automatic cleanup of shared pointers. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classGroup_a8abe29b0653f0d6af887f157a52fe82a}\label{classGroup_a8abe29b0653f0d6af887f157a52fe82a} 
+\index{Group@{Group}!display@{display}}
+\index{display@{display}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily std\+::ostream \& Group\+::display (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const}
+
+
+
+Displays the group\textquotesingle{}s information to an output stream. 
+
+Outputs the group\textquotesingle{}s name and all contained multimedia items to the specified output stream in a formatted manner.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em os} & The output stream to write to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the modified output stream 
+\end{DoxyReturn}
+\Hypertarget{classGroup_a2441b4048116108fe8f65bdf71d02494}\label{classGroup_a2441b4048116108fe8f65bdf71d02494} 
+\index{Group@{Group}!getName@{getName}}
+\index{getName@{getName}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Group\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the name of the group. 
+
+\begin{DoxyReturn}{Returns}
+A constant reference to the string containing the group\textquotesingle{}s name 
+\end{DoxyReturn}
+\Hypertarget{classGroup_a292eb30493e66cb7e152fd72cd4ce877}\label{classGroup_a292eb30493e66cb7e152fd72cd4ce877} 
+\index{Group@{Group}!setName@{setName}}
+\index{setName@{setName}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Group\+::set\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{group\+Name }\end{DoxyParamCaption})}
+
+
+
+Sets the name of the group. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em group\+Name} & The new name to assign to the group \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classGroup_adddd5c43ff870a047aa66db4edf82a7e}\label{classGroup_adddd5c43ff870a047aa66db4edf82a7e} 
+\index{Group@{Group}!Manager@{Manager}}
+\index{Manager@{Manager}!Group@{Group}}
+\doxysubsubsection{\texorpdfstring{Manager}{Manager}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classManager}{Manager}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxylink{classManager}{Manager} class is granted friend access to manage group creation. 
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{classManager}{Manager} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp/\mbox{\hyperlink{group_8h}{group.\+h}}\item 
+cpp/group.\+cpp\end{DoxyCompactItemize}

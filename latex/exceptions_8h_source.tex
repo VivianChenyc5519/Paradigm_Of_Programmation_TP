@@ -1,0 +1,17 @@
+\doxysection{exceptions.\+h}
+\hypertarget{exceptions_8h_source}{}\label{exceptions_8h_source}\index{cpp/exceptions.h@{cpp/exceptions.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classNamingError}{NamingError}}:\ \textcolor{keyword}{public}\ std::runtime\_error\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classNamingError_a5e744a93eec70f66d9e08f896363e4d3}{NamingError}}(\textcolor{keyword}{const}\ std::string\&\ message):\ std::runtime\_error(message)\ \{\}}
+\DoxyCodeLine{00014\ \};}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDeleteError}{DeleteError}}:\ \textcolor{keyword}{public}\ std::runtime\_error\ \{}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{classDeleteError_ad8a97512fe60742d4d2f34d1e36f63e6}{DeleteError}}(\textcolor{keyword}{const}\ std::string\&\ message):\ std::runtime\_error(message)\{\}}
+\DoxyCodeLine{00028\ \};}
+
+\end{DoxyCode}

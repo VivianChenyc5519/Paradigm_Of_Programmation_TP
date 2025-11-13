@@ -1,0 +1,52 @@
+\doxysection{cpp/manager.h File Reference}
+\hypertarget{manager_8h}{}\label{manager_8h}\index{cpp/manager.h@{cpp/manager.h}}
+
+
+Header file for the \doxylink{classManager}{Manager} class.  
+
+
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include "{}multimedia.\+h"{}}\newline
+{\ttfamily \#include "{}group.\+h"{}}\newline
+{\ttfamily \#include "{}photo.\+h"{}}\newline
+{\ttfamily \#include "{}video.\+h"{}}\newline
+{\ttfamily \#include "{}film.\+h"{}}\newline
+Include dependency graph for manager.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{manager_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classManager}{Manager}}
+\begin{DoxyCompactList}\small\item\em Central management system for multimedia objects and groups. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{manager_8h_a04d25a58a9de044f16f8444a90d9d13c}\label{manager_8h_a04d25a58a9de044f16f8444a90d9d13c} 
+using {\bfseries mm\+Ptr} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classMultimedia}{Multimedia}} $>$
+\item 
+\Hypertarget{manager_8h_a2dfde56ac20e7f8a8e6716ccb073d11f}\label{manager_8h_a2dfde56ac20e7f8a8e6716ccb073d11f} 
+using {\bfseries p\+Ptr} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classPhoto}{Photo}} $>$
+\item 
+\Hypertarget{manager_8h_a5e17863b575175bab87fc5d1e3b8f75f}\label{manager_8h_a5e17863b575175bab87fc5d1e3b8f75f} 
+using {\bfseries v\+Ptr} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classVideo}{Video}} $>$
+\item 
+\Hypertarget{manager_8h_a53632d986980713d4b67a67695fe26f5}\label{manager_8h_a53632d986980713d4b67a67695fe26f5} 
+using {\bfseries f\+Ptr} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classFilm}{Film}} $>$
+\item 
+\Hypertarget{manager_8h_ad7f56fcebce5d0a32ff2f691730bd005}\label{manager_8h_ad7f56fcebce5d0a32ff2f691730bd005} 
+using {\bfseries g\+Ptr} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classGroup}{Group}} $>$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for the \doxylink{classManager}{Manager} class. 
+
+This file defines the \doxylink{classManager}{Manager} class which serves as the central management system for multimedia objects and groups. The \doxylink{classManager}{Manager} handles creation, storage, retrieval, and deletion of multimedia items (photos, videos, films) and organizes them into groups. 

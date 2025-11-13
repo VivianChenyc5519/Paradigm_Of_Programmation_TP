@@ -1,0 +1,285 @@
+\doxysection{Film Class Reference}
+\hypertarget{classFilm}{}\label{classFilm}\index{Film@{Film}}
+
+
+Represents a film with chapter management capabilities.  
+
+
+
+
+{\ttfamily \#include $<$film.\+h$>$}
+
+
+
+Inheritance diagram for Film\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classFilm__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Film\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classFilm__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classFilm}{Film}} \& \mbox{\hyperlink{classFilm_a2c5ef0ba9aec84c2f44276c5133648a9}{operator=}} (const \mbox{\hyperlink{classFilm}{Film}} \&other\+Film)
+\begin{DoxyCompactList}\small\item\em Assignment operator (copy assignment) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFilm_ad7de457dd2dd885ee3dc06d0a6316f62}{set\+Chapters}} (const int \texorpdfstring{$\ast$}{*}chapters, size\+\_\+t n\+\_\+chapters)
+\begin{DoxyCompactList}\small\item\em Sets the chapters for this film. \end{DoxyCompactList}\item 
+const int \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classFilm_a7bdcc9cb81df92862f98b3b6b286ab4a}{get\+Chapters}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the chapters array. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classFilm_a3af20463f3a82560cb09ddb97f92e935}{get\+Chapter\+Number}} () const
+\begin{DoxyCompactList}\small\item\em Gets the number of chapters. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classFilm_af077ce4bd1e3d09dc1732b047dd6b090}{display}} (std\+::ostream \&os) const override
+\begin{DoxyCompactList}\small\item\em Displays film information to an output stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classFilm_a582583b3f3abc77fe66cd56a45c28436}{write}} (const std\+::string \&filename) const override
+\begin{DoxyCompactList}\small\item\em Writes film information to a file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classFilm_af6bfc1299bce347dfc6e336b8ccec3f1}{\texorpdfstring{$\sim$}{\string~}\+Film}} () override
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{classFilm}{Film} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classVideo}{Video}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classVideo_aebf7e2a8fa2bbd79335b1cf35925d190}{\texorpdfstring{$\sim$}{\string~}\+Video}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \doxylink{classVideo}{Video} class. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classVideo_a57f903f1d582ac6ef88922c7a6cb8f7f}{get\+Duration}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the duration of the video. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVideo_aca0f92f98c7b6377aaa23af1645b8172}{set\+Duration}} (int \mbox{\hyperlink{classVideo_a8534071e7e759e39c42fa9a51ae620eb}{duration}})
+\begin{DoxyCompactList}\small\item\em Sets the duration of the video. \end{DoxyCompactList}\item 
+std\+::ostream \& \mbox{\hyperlink{classVideo_a2cf1bedfe7dc25d40dfb45087bfe5175}{display}} (std\+::ostream \&os) const override
+\begin{DoxyCompactList}\small\item\em Displays video information to an output stream. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVideo_a89e11497f4f200f387805b10bd42922d}{play}} () const override
+\begin{DoxyCompactList}\small\item\em Plays the video. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVideo_a4d8e64c312a41eb1f99348759f2bd62c}{write}} (const std\+::string \&filename) const override
+\begin{DoxyCompactList}\small\item\em Writes video information to a file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classMultimedia}{Multimedia}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classMultimedia_ab280f9ce1d0a1291c9b1ab876e854c94}{\texorpdfstring{$\sim$}{\string~}\+Multimedia}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \doxylink{classMultimedia}{Multimedia} class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classMultimedia_a6105129da1041cc546f67fbd79f244f4}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the name of the multimedia object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMultimedia_ae7587faa573715bcbaa786a0d83f4871}{set\+Name}} (std\+::string \mbox{\hyperlink{classMultimedia_a58f835cc9f6520566094574971ce4033}{name}})
+\begin{DoxyCompactList}\small\item\em Sets the name of the multimedia object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classMultimedia_a046da9beb77f4ec01d634c969ed39133}{get\+Filepath}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the file path of the multimedia object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMultimedia_a33d9c2f7198e45193480fc13ad223549}{set\+Filepath}} (std\+::string \mbox{\hyperlink{classMultimedia_ae8351a7f04b32821ea930f837042ce74}{filepath}})
+\begin{DoxyCompactList}\small\item\em Sets the file path of the multimedia object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classFilm_adddd5c43ff870a047aa66db4edf82a7e}{Manager}}
+\begin{DoxyCompactList}\small\item\em \doxylink{classManager}{Manager} class is granted friend access for film creation and management. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classVideo}{Video}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVideo_ab67336c2c5b6227a9635bc7dcd6af543}{Video}} ()
+\begin{DoxyCompactList}\small\item\em Protected default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVideo_a986fbacb13d815ce4d336738578d4396}{Video}} (std\+::string \mbox{\hyperlink{classMultimedia_a58f835cc9f6520566094574971ce4033}{name}}, std\+::string \mbox{\hyperlink{classMultimedia_ae8351a7f04b32821ea930f837042ce74}{filepath}}, int \mbox{\hyperlink{classVideo_a8534071e7e759e39c42fa9a51ae620eb}{duration}})
+\begin{DoxyCompactList}\small\item\em Protected parameterized constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classMultimedia}{Multimedia}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMultimedia_a7106753d618df92d53b89328b7ecfe7f}{Multimedia}} ()
+\begin{DoxyCompactList}\small\item\em Protected default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMultimedia_a2b29439834990fcc66de9552b2c50d4a}{Multimedia}} (std\+::string n, std\+::string d)
+\begin{DoxyCompactList}\small\item\em Protected parameterized constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classVideo}{Video}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classVideo_a8534071e7e759e39c42fa9a51ae620eb}{duration}} = 0
+\begin{DoxyCompactList}\small\item\em The duration of the video in seconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classMultimedia}{Multimedia}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classMultimedia_a58f835cc9f6520566094574971ce4033}{name}} = "{}"{}
+\begin{DoxyCompactList}\small\item\em The name or title of the multimedia object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classMultimedia_ae8351a7f04b32821ea930f837042ce74}{filepath}} = "{}"{}
+\begin{DoxyCompactList}\small\item\em The file path to the multimedia resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a film with chapter management capabilities. 
+
+The \doxylink{classFilm}{Film} class extends \doxylink{classVideo}{Video} to add support for film chapters. It allows storing and retrieving chapter information (chapter lengths) for a video file, enabling chapter-\/based navigation and display. Films are managed through the \doxylink{classManager}{Manager} class which controls their creation and lifecycle.
+
+\begin{DoxyNote}{Note}
+Chapter data is managed dynamically and properly copied during object duplication to ensure safe memory management.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{classVideo}{Video}, \doxylink{classManager}{Manager}, \doxylink{classMultimedia}{Multimedia} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classFilm_af6bfc1299bce347dfc6e336b8ccec3f1}\label{classFilm_af6bfc1299bce347dfc6e336b8ccec3f1} 
+\index{Film@{Film}!````~Film@{\texorpdfstring{$\sim$}{\string~}Film}}
+\index{````~Film@{\texorpdfstring{$\sim$}{\string~}Film}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Film()}{\string~Film()}}
+{\footnotesize\ttfamily Film\+::\texorpdfstring{$\sim$}{\string~}\+Film (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor for the \doxylink{classFilm}{Film} class. 
+
+Cleans up dynamically allocated chapter data and inherited \doxylink{classVideo}{Video} resources. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classFilm_af077ce4bd1e3d09dc1732b047dd6b090}\label{classFilm_af077ce4bd1e3d09dc1732b047dd6b090} 
+\index{Film@{Film}!display@{display}}
+\index{display@{display}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily std\+::ostream \& Film\+::display (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays film information to an output stream. 
+
+Outputs detailed information about the film including inherited video properties and chapter information to the specified output stream.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in,out}}  & {\em os} & The output stream to write to \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to the modified output stream
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This overrides the display method from the \doxylink{classVideo}{Video} class 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classMultimedia_a5b27d6c6028b07da91bdac0547dfcf92}{Multimedia}}.
+
+\Hypertarget{classFilm_a3af20463f3a82560cb09ddb97f92e935}\label{classFilm_a3af20463f3a82560cb09ddb97f92e935} 
+\index{Film@{Film}!getChapterNumber@{getChapterNumber}}
+\index{getChapterNumber@{getChapterNumber}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{getChapterNumber()}{getChapterNumber()}}
+{\footnotesize\ttfamily size\+\_\+t Film\+::get\+Chapter\+Number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the number of chapters. 
+
+Returns the count of chapters in this film.
+
+\begin{DoxyReturn}{Returns}
+The number of chapters 
+\end{DoxyReturn}
+\Hypertarget{classFilm_a7bdcc9cb81df92862f98b3b6b286ab4a}\label{classFilm_a7bdcc9cb81df92862f98b3b6b286ab4a} 
+\index{Film@{Film}!getChapters@{getChapters}}
+\index{getChapters@{getChapters}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{getChapters()}{getChapters()}}
+{\footnotesize\ttfamily const int \texorpdfstring{$\ast$}{*} Film\+::get\+Chapters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the chapters array. 
+
+Returns a const pointer to the internal chapters array containing the length of each chapter.
+
+\begin{DoxyReturn}{Returns}
+A const pointer to the chapters array 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+\doxylink{classFilm_a3af20463f3a82560cb09ddb97f92e935}{get\+Chapter\+Number()} 
+\end{DoxySeeAlso}
+\Hypertarget{classFilm_a2c5ef0ba9aec84c2f44276c5133648a9}\label{classFilm_a2c5ef0ba9aec84c2f44276c5133648a9} 
+\index{Film@{Film}!operator=@{operator=}}
+\index{operator=@{operator=}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFilm}{Film}} \& Film\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classFilm}{Film}} \&}]{other\+Film }\end{DoxyParamCaption})}
+
+
+
+Assignment operator (copy assignment) 
+
+Assigns the contents of another \doxylink{classFilm}{Film} object to this object, including all chapter information. Ensures proper deep copying of chapter data.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em other\+Film} & The \doxylink{classFilm}{Film} object to copy from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A reference to this \doxylink{classFilm}{Film} object after assignment 
+\end{DoxyReturn}
+\Hypertarget{classFilm_ad7de457dd2dd885ee3dc06d0a6316f62}\label{classFilm_ad7de457dd2dd885ee3dc06d0a6316f62} 
+\index{Film@{Film}!setChapters@{setChapters}}
+\index{setChapters@{setChapters}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{setChapters()}{setChapters()}}
+{\footnotesize\ttfamily void Film\+::set\+Chapters (\begin{DoxyParamCaption}\item[{const int \texorpdfstring{$\ast$}{*}}]{chapters,  }\item[{size\+\_\+t}]{n\+\_\+chapters }\end{DoxyParamCaption})}
+
+
+
+Sets the chapters for this film. 
+
+Stores the chapter length information for the film. Each chapter\textquotesingle{}s duration is provided as an array of integers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em chapters} & A pointer to an array of integers representing chapter lengths \\
+\hline
+\mbox{\texttt{ in}}  & {\em n\+\_\+chapters} & The number of chapters in the array\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This method performs deep copying of the chapter data 
+\end{DoxyNote}
+\Hypertarget{classFilm_a582583b3f3abc77fe66cd56a45c28436}\label{classFilm_a582583b3f3abc77fe66cd56a45c28436} 
+\index{Film@{Film}!write@{write}}
+\index{write@{write}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Film\+::write (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Writes film information to a file. 
+
+Serializes the film\textquotesingle{}s data (including chapter information) to a file for persistence and later retrieval.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em filename} & The path to the file where data should be written\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This overrides the write method from the \doxylink{classVideo}{Video} class 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classMultimedia_a01fb32d619c67db3289ba9f9f7802ebe}{Multimedia}}.
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{classFilm_adddd5c43ff870a047aa66db4edf82a7e}\label{classFilm_adddd5c43ff870a047aa66db4edf82a7e} 
+\index{Film@{Film}!Manager@{Manager}}
+\index{Manager@{Manager}!Film@{Film}}
+\doxysubsubsection{\texorpdfstring{Manager}{Manager}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classManager}{Manager}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxylink{classManager}{Manager} class is granted friend access for film creation and management. 
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{classManager}{Manager} 
+\end{DoxySeeAlso}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+cpp/\mbox{\hyperlink{film_8h}{film.\+h}}\item 
+cpp/film.\+cpp\end{DoxyCompactItemize}

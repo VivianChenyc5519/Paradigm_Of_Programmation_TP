@@ -1,0 +1,38 @@
+\doxysection{group.\+h}
+\hypertarget{group_8h_source}{}\label{group_8h_source}\index{cpp/group.h@{cpp/group.h}}
+\mbox{\hyperlink{group_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#ifndef\ GROUP\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ GROUP\_H}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{multimedia_8h}{multimedia.h}}"{}}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00023\ \textcolor{keyword}{using\ }\mbox{\hyperlink{group_8h_a4bea42d66b2f55cfb63dc0872f1a26fb}{mmPtr}}\ =\ std::shared\_ptr<Multimedia>;}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00038\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGroup}{Group}}\ :\ \textcolor{keyword}{public}\ std::list<mmPtr>}
+\DoxyCodeLine{00039\ \{}
+\DoxyCodeLine{00040\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{classGroup_aed00a22ff227ee2657ae44a5cbcedf7c}{\string~Group}}();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00054\ \ \ \ \ std::string\ \mbox{\hyperlink{classGroup_a2441b4048116108fe8f65bdf71d02494}{getName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classGroup_a292eb30493e66cb7e152fd72cd4ce877}{setName}}(\textcolor{keyword}{const}\ std::string\ \&groupName);}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00072\ \ \ \ \ std::ostream\ \&\mbox{\hyperlink{classGroup_a8abe29b0653f0d6af887f157a52fe82a}{display}}(std::ostream\ \&os)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00074\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00082\ \ \ \ \ \mbox{\hyperlink{classGroup}{Group}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00087\ \ \ \ \ std::string\ name\ =\ \textcolor{stringliteral}{"{}DefaultGroup"{}};}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00093\ \ \ \ \ std::list<mmPtr>\ items;}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classManager}{Manager}};}
+\DoxyCodeLine{00099\ \};}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00101\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ GROUP\_H}}
+
+\end{DoxyCode}

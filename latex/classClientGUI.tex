@@ -1,0 +1,108 @@
+\doxysection{Client\+GUI Class Reference}
+\hypertarget{classClientGUI}{}\label{classClientGUI}\index{ClientGUI@{ClientGUI}}
+
+
+Swing-\/based GUI for the multimedia client application.  
+
+
+
+
+Inheritance diagram for Client\+GUI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=143pt]{classClientGUI__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Client\+GUI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=143pt]{classClientGUI__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classClientGUI_aac7f886e93eeaa6c6191292397d0c2f0}{Client\+GUI}} (\mbox{\hyperlink{classClient}{Client}} client)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classClientGUI}{Client\+GUI}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classClientGUI_ae40101bbeb1b2eab278c483a55b6d4de}{main}} (String\mbox{[}$\,$\mbox{]} args)  throws Exception 
+\begin{DoxyCompactList}\small\item\em Main method to launch the multimedia client GUI. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Swing-\/based GUI for the multimedia client application. 
+
+The \doxylink{classClientGUI}{Client\+GUI} class extends JFrame to provide a graphical user interface for the multimedia client. It allows users to\+:
+\begin{DoxyItemize}
+\item Enter multimedia names in a text field
+\item Search for multimedia items using the Search button
+\item Play selected multimedia using the Play button
+\item Exit the application using the Exit button
+\end{DoxyItemize}
+
+The GUI communicates with a \doxylink{classClient}{Client} object to send requests to the multimedia server and displays responses in a text area. The interface uses Border\+Layout to organize input field (North), output area (Center), and control buttons (South).
+
+\begin{DoxyNote}{Note}
+This class uses an inner class Button\+Action to handle button events
+\end{DoxyNote}
+\begin{DoxySeeAlso}{See also}
+\doxylink{classClient}{Client} 
+\end{DoxySeeAlso}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classClientGUI_aac7f886e93eeaa6c6191292397d0c2f0}\label{classClientGUI_aac7f886e93eeaa6c6191292397d0c2f0} 
+\index{ClientGUI@{ClientGUI}!ClientGUI@{ClientGUI}}
+\index{ClientGUI@{ClientGUI}!ClientGUI@{ClientGUI}}
+\doxysubsubsection{\texorpdfstring{ClientGUI()}{ClientGUI()}}
+{\footnotesize\ttfamily Client\+GUI.\+Client\+GUI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classClient}{Client}}}]{client }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for \doxylink{classClientGUI}{Client\+GUI}. 
+
+Initializes the graphical user interface with all components including text fields, buttons, text area, and layout. Creates a window with title "{}\+Main\+Window"{} and sets up event listeners for user interactions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em client} & The \doxylink{classClient}{Client} object to handle server communication \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classClientGUI_ae40101bbeb1b2eab278c483a55b6d4de}\label{classClientGUI_ae40101bbeb1b2eab278c483a55b6d4de} 
+\index{ClientGUI@{ClientGUI}!main@{main}}
+\index{main@{main}!ClientGUI@{ClientGUI}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void Client\+GUI.\+main (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{args }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Main method to launch the multimedia client GUI. 
+
+Creates a \doxylink{classClient}{Client} instance connected to the server at localhost on port 3331, then initializes and displays the \doxylink{classClientGUI}{Client\+GUI} window.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em args} & Command line arguments (not used) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Exception} & If there are communication or initialization errors \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+swing/\mbox{\hyperlink{ClientGUI_8java}{Client\+GUI.\+java}}\end{DoxyCompactItemize}

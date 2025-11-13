@@ -1,0 +1,17 @@
+var searchData=
+[
+  ['getchapternumber_0',['getChapterNumber',['../classFilm.html#a3af20463f3a82560cb09ddb97f92e935',1,'Film']]],
+  ['getchapters_1',['getChapters',['../classFilm.html#a7bdcc9cb81df92862f98b3b6b286ab4a',1,'Film']]],
+  ['getduration_2',['getDuration',['../classVideo.html#a57f903f1d582ac6ef88922c7a6cb8f7f',1,'Video']]],
+  ['getfilepath_3',['getFilepath',['../classMultimedia.html#a046da9beb77f4ec01d634c969ed39133',1,'Multimedia']]],
+  ['getlatitude_4',['getLatitude',['../classPhoto.html#abf3e0bbc8dbe20b79aab846eedfee74d',1,'Photo']]],
+  ['getlongitude_5',['getLongitude',['../classPhoto.html#af784f282da3cfab4a5e4c45b4da3b3f8',1,'Photo']]],
+  ['getmedias_6',['getMedias',['../classManager.html#a8d7be584f0ab41a302a004539814ec91',1,'Manager']]],
+  ['getname_7',['getname',['../classGroup.html#a2441b4048116108fe8f65bdf71d02494',1,'Group::getName()'],['../classMultimedia.html#a6105129da1041cc546f67fbd79f244f4',1,'Multimedia::getName()']]],
+  ['getreceivebuffersize_8',['getReceiveBufferSize',['../classSocket.html#a53a0a6980058ce02034033b05f6ca389',1,'Socket']]],
+  ['getreuseaddress_9',['getReuseAddress',['../classSocket.html#a440e7ee9303d454df0c51fe6125cd2af',1,'Socket']]],
+  ['getsendbuffersize_10',['getSendBufferSize',['../classSocket.html#acb2d3979ff562c2ffd60b12a1b4c9897',1,'Socket']]],
+  ['getsolinger_11',['getSoLinger',['../classSocket.html#ae3545855771edf076843e2e07fa7d3cd',1,'Socket']]],
+  ['getsotimeout_12',['getSoTimeout',['../classSocket.html#a38b17de459b22ab45db16e538b963c49',1,'Socket']]],
+  ['gettcpnodelay_13',['getTcpNoDelay',['../classSocket.html#a2539928ed0829df5070384f907ea48f7',1,'Socket']]]
+];

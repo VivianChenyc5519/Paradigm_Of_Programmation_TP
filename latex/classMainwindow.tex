@@ -1,0 +1,92 @@
+\doxysection{Mainwindow Class Reference}
+\hypertarget{classMainwindow}{}\label{classMainwindow}\index{Mainwindow@{Mainwindow}}
+
+
+Main window with buttons and text area.  
+
+
+
+
+Inheritance diagram for Mainwindow\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classMainwindow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Mainwindow\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classMainwindow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMainwindow_a6226ae328bb4394129537da0452d6afc}{Mainwindow}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{classMainwindow}{Mainwindow}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classMainwindow_a8fc185b837e4fcdbf66d50e5af2cd2ba}{main}} (String argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Main method to launch the \doxylink{classMainwindow}{Mainwindow} application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Main window with buttons and text area. 
+
+The \doxylink{classMainwindow}{Mainwindow} class extends JFrame to provide a graphical user interface with a text area and control buttons. It allows users to\+:
+\begin{DoxyItemize}
+\item Append text to the text area using Button1 or the "{}\+Button1"{} menu item
+\item Append different text using Button2 or the "{}\+Button2"{} menu item
+\item Exit the application using Button3 or the "{}\+Button3"{} menu item
+\end{DoxyItemize}
+
+The interface uses Border\+Layout to organize components\+: menu bar (top), toolbar (north), text area with scroll pane (center), and button controls (south). Events are handled through an inner Button\+Action class.
+
+\begin{DoxyNote}{Note}
+The window includes both button controls and a menu bar with corresponding menu items 
+\end{DoxyNote}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classMainwindow_a6226ae328bb4394129537da0452d6afc}\label{classMainwindow_a6226ae328bb4394129537da0452d6afc} 
+\index{Mainwindow@{Mainwindow}!Mainwindow@{Mainwindow}}
+\index{Mainwindow@{Mainwindow}!Mainwindow@{Mainwindow}}
+\doxysubsubsection{\texorpdfstring{Mainwindow()}{Mainwindow()}}
+{\footnotesize\ttfamily Mainwindow.\+Mainwindow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor for \doxylink{classMainwindow}{Mainwindow}. 
+
+Initializes the graphical user interface with all components including text area, buttons, scroll pane, menu bar, and toolbar. Sets up the layout using Border\+Layout and configures event listeners for user interactions. The window is configured with title "{}\+Main\+Window"{} and exits on close. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classMainwindow_a8fc185b837e4fcdbf66d50e5af2cd2ba}\label{classMainwindow_a8fc185b837e4fcdbf66d50e5af2cd2ba} 
+\index{Mainwindow@{Mainwindow}!main@{main}}
+\index{main@{main}!Mainwindow@{Mainwindow}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily static void Mainwindow.\+main (\begin{DoxyParamCaption}\item[{String}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Main method to launch the \doxylink{classMainwindow}{Mainwindow} application. 
+
+Creates and displays a new instance of the \doxylink{classMainwindow}{Mainwindow} GUI.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em argv} & Command line arguments (not used) \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+swing/\mbox{\hyperlink{Mainwindow_8java}{Mainwindow.\+java}}\end{DoxyCompactItemize}

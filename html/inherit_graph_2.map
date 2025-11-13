@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,31,72,56"/>
+<area shape="rect" id="Node000001" href="$classClientGUI.html" title="Swing&#45;based GUI for the multimedia client application." alt="" coords="130,5,214,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="85,32,129,23,130,29,86,37"/>
+<area shape="rect" id="Node000002" href="$classMainwindow.html" title="Main window with buttons and text area." alt="" coords="120,55,224,80"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="86,49,120,55,119,61,85,54"/>
+</map>

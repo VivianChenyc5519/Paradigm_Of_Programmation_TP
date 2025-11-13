@@ -1,0 +1,43 @@
+\doxysection{photo.\+h}
+\hypertarget{photo_8h_source}{}\label{photo_8h_source}\index{cpp/photo.h@{cpp/photo.h}}
+\mbox{\hyperlink{photo_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#ifndef\ PHOTO\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ PHOTO\_H}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{multimedia_8h}{multimedia.h}}"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classPhoto}{Photo}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classMultimedia}{Multimedia}}\ \{}
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classPhoto_adc366234be6226600360c7cbba8e7fcf}{\string~Photo}}();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPhoto_abf3e0bbc8dbe20b79aab846eedfee74d}{getLatitude}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00054\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPhoto_a94319fce6b17eef205d25a15b44f3439}{setLatitude}}(\textcolor{keywordtype}{double}\ latitude);}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{classPhoto_af784f282da3cfab4a5e4c45b4da3b3f8}{getLongitude}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPhoto_a110586b178177c87da549b6de6d85fb5}{setLongitude}}(\textcolor{keywordtype}{double}\ longitude);}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00085\ \ \ \ \ std::ostream\&\ \mbox{\hyperlink{classPhoto_aa3e169fc804ac386f6db2bfa2926a88d}{display}}(std::ostream\&\ os)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPhoto_a98b55224b5f9bd016cb08aa2e9a64e46}{play}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPhoto_a8f4ca5ad388b803db24a7ce0a65b23c1}{write}}(\textcolor{keyword}{const}\ std::string\&\ filename)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00113\ \ \ \ \ \textcolor{keywordtype}{double}\ latitude\ =\ 0;}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00118\ \ \ \ \ \textcolor{keywordtype}{double}\ longitude\ =\ 0;}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00126\ \ \ \ \ \mbox{\hyperlink{classPhoto}{Photo}}();}
+\DoxyCodeLine{00127\ }
+\DoxyCodeLine{00141\ \ \ \ \ \mbox{\hyperlink{classPhoto}{Photo}}(std::string\ \mbox{\hyperlink{classMultimedia_a58f835cc9f6520566094574971ce4033}{name}},\ std::string\ \mbox{\hyperlink{classMultimedia_ae8351a7f04b32821ea930f837042ce74}{filepath}},\ \textcolor{keywordtype}{double}\ latitude,\ \textcolor{keywordtype}{double}\ longitude);}
+\DoxyCodeLine{00142\ }
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keyword}{friend}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classManager}{Manager}};}
+\DoxyCodeLine{00147\ \};}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ PHOTO\_H}}
+
+\end{DoxyCode}

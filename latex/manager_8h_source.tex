@@ -1,0 +1,64 @@
+\doxysection{manager.\+h}
+\hypertarget{manager_8h_source}{}\label{manager_8h_source}\index{cpp/manager.h@{cpp/manager.h}}
+\mbox{\hyperlink{manager_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#ifndef\ MANAGER\_H}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#define\ MANAGER\_H}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{multimedia_8h}{multimedia.h}}"{}}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{group_8h}{group.h}}"{}}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{photo_8h}{photo.h}}"{}}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{video_8h}{video.h}}"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{film_8h}{film.h}}"{}}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{using\ }\mbox{\hyperlink{group_8h_a4bea42d66b2f55cfb63dc0872f1a26fb}{mmPtr}}\ =\ std::shared\_ptr<Multimedia>;}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{using\ }pPtr\ =\ std::shared\_ptr<Photo>;}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{using\ }vPtr\ =\ std::shared\_ptr<Video>;}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{using\ }fPtr\ =\ std::shared\_ptr<Film>;}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00046\ \textcolor{keyword}{using\ }gPtr\ =\ std::shared\_ptr<Group>;}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00062\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classManager}{Manager}}}
+\DoxyCodeLine{00063\ \{}
+\DoxyCodeLine{00064\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00070\ \ \ \ \ \mbox{\hyperlink{classManager_a51c8f271f79b1c6590e9bc4ae6343bc0}{Manager}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00071\ }
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{classManager_a253fa96bd328570ab5aaf7ab217fdcfa}{\string~Manager}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00095\ \ \ \ \ pPtr\ \mbox{\hyperlink{classManager_a645e510a0c37dfa16686847864b88718}{createPhoto}}(std::string\ name\ =\ \textcolor{stringliteral}{"{}"{}},\ std::string\ filepath\ =\ \textcolor{stringliteral}{"{}"{}},\ \textcolor{keywordtype}{double}\ latitude\ =\ 0,\ \textcolor{keywordtype}{double}\ longitude\ =\ 0);}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00111\ \ \ \ \ vPtr\ \mbox{\hyperlink{classManager_ae2ed751c219f752bcc5bba4e45322aa7}{createVideo}}(std::string\ name\ =\ \textcolor{stringliteral}{"{}"{}},\ std::string\ filepath\ =\ \textcolor{stringliteral}{"{}"{}},\ \textcolor{keywordtype}{int}\ duration\ =\ 0);}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00129\ \ \ \ \ fPtr\ \mbox{\hyperlink{classManager_a6e8c1c140436246d4fbc2ccfe6572203}{createFilm}}(std::string\ name\ =\ \textcolor{stringliteral}{"{}"{}},\ std::string\ filepath\ =\ \textcolor{stringliteral}{"{}"{}},\ \textcolor{keywordtype}{int}\ duration\ =\ 0,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ *chapters\ =\ \textcolor{keyword}{nullptr},\ \textcolor{keywordtype}{size\_t}\ n\_chapters\ =\ 0);}
+\DoxyCodeLine{00130\ }
+\DoxyCodeLine{00143\ \ \ \ \ fPtr\ \mbox{\hyperlink{classManager_a933e2f1f49dabc3d8d74212223962587}{copyAndCreateFilm}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classFilm}{Film}}\ \&otherFilm);}
+\DoxyCodeLine{00144\ }
+\DoxyCodeLine{00156\ \ \ \ \ gPtr\ \mbox{\hyperlink{classManager_afc73bc0c052812963cc7fd3da337bae0}{createGroup}}(std::string\ groupName\ =\ \textcolor{stringliteral}{"{}DefaultGroup"{}});}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00169\ \ \ \ \ std::ostream\ \&\mbox{\hyperlink{classManager_a628b501a546120aa5c267b9ff2f888a3}{searchAndDisplay}}(\textcolor{keyword}{const}\ std::string\ \&name,\ std::ostream\ \&os)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00179\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classManager_aaa176b90353c79c739bc9628b36f1a4c}{playMedia}}(\textcolor{keyword}{const}\ std::string\ \&name)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00180\ }
+\DoxyCodeLine{00189\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classManager_a861d8a5c6fc1d2ed9d2a9f502002e817}{deleteByName}}(\textcolor{keyword}{const}\ std::string\ \&name);}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00200\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classManager_a27cb062c5f70ca9fe0de9226e45e9ed8}{read}}(\textcolor{keyword}{const}\ std::string\&\ filename);}
+\DoxyCodeLine{00201\ }
+\DoxyCodeLine{00210\ \ \ \ \ std::map<std::string,\ mmPtr>\ \mbox{\hyperlink{classManager_a8d7be584f0ab41a302a004539814ec91}{getMedias}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00211\ }
+\DoxyCodeLine{00212\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00214\ \ \ \ \ std::map<std::string,\ mmPtr>\ mediaCollection;}
+\DoxyCodeLine{00215\ }
+\DoxyCodeLine{00217\ \ \ \ \ std::map<std::string,\ gPtr>\ mediaGroups;}
+\DoxyCodeLine{00218\ \};}
+\DoxyCodeLine{00219\ }
+\DoxyCodeLine{00220\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MANAGER\_H}}
+
+\end{DoxyCode}

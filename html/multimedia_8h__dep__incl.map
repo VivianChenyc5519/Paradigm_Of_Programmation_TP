@@ -1,0 +1,17 @@
+<map id="cpp/multimedia.h" name="cpp/multimedia.h">
+<area shape="rect" id="Node000001" title="Header file for the Multimedia base class." alt="" coords="116,5,252,31"/>
+<area shape="rect" id="Node000002" href="$group_8h.html" title="Header file for the Group class." alt="" coords="5,152,104,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,42,125,80,66,153,61,150,121,77,159,38"/>
+<area shape="rect" id="Node000003" href="$manager_8h.html" title="Header file for the Manager class." alt="" coords="159,225,278,251"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="177,44,169,73,169,104,178,139,191,173,215,224,210,226,186,175,173,140,164,104,164,72,171,43"/>
+<area shape="rect" id="Node000004" href="$photo_8h.html" title="Header file for the Photo class." alt="" coords="179,79,277,104"/>
+<area shape="poly" id="edge4_Node000001_Node000004" title=" " alt="" coords="201,41,223,77,219,80,196,44"/>
+<area shape="rect" id="Node000005" href="$video_8h.html" title="Header file for the Video class." alt="" coords="302,79,399,104"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="224,34,324,76,322,81,222,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,180,193,223,191,228,93,185"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="229,118,222,225,217,225,224,118"/>
+<area shape="poly" id="edge9_Node000005_Node000003" title=" " alt="" coords="332,116,297,154,231,227,227,223,293,150,328,112"/>
+<area shape="rect" id="Node000006" href="$film_8h.html" title="Header file for the Film class." alt="" coords="307,152,394,177"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="353,118,353,152,348,152,348,118"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="319,186,242,227,239,223,316,181"/>
+</map>
